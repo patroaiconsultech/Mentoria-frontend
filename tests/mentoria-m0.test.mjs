@@ -7,8 +7,9 @@ const page = fs.readFileSync("src/routes/MentoriaLanding.tsx", "utf8");
 const css = fs.readFileSync("src/routes/MentoriaLanding.css", "utf8");
 const types = fs.readFileSync("src/vite-env.d.ts", "utf8");
 
-test("Mentoria route is additive and does not replace EFATA public/private routes", () => {
-  assert.match(app, /path="\/" element={<Landing \/>}/);
+test("Mentoria is the public root while EFATA private routes remain intact", () => {
+  assert.match(app, /path="\/" element={<MentoriaLanding \/>}/);
+  assert.doesNotMatch(app, /path="\/" element={<Landing \/>}/);
   assert.match(app, /path="\/mentoria" element={<MentoriaLanding \/>}/);
   assert.match(app, /path="\/app" element={<AppEntry \/>}/);
   assert.match(app, /path="\/admin" element={<AdminAccessGate \/>}/);
