@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./MentoriaLanding.css";
 import WorkshopRegistrationForm, { registrationFormConfig } from "./WorkshopRegistrationForm";
+import MentoriaAssistant from "./MentoriaAssistant";
 
 /**
  * M0 is intentionally presentation-only.
