@@ -35,7 +35,7 @@ export default function App() {
       </a>
       <PwaUpdateBanner />
       <Routes>
-        <Route path="/" element={<Landing />} />
+        <Route path="/" element={<MentoriaLanding />} />
         <Route path="/mentoria" element={<MentoriaLanding />} />
         <Route path="/mentoria/area" element={<MentoriaPortal />} />
         <Route path="/access" element={<AccessPortal />} />
