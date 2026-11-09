@@ -1,0 +1,2 @@
+fef47f25240ff6421337e28ecef31f7283718c9df5bf843a2adf932b319be3e4  scripts/build-evidence.mjs
+52f714f1df3fb89245e3ee4ed992908de3f890ca1eb8d46ef62ab334b8fa29a3  scripts/verify-dist.mjs
