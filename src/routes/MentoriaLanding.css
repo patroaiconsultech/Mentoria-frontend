@@ -155,3 +155,35 @@
 @media (prefers-reduced-motion: reduce) {
   .dg-mentoria *, .dg-mentoria *::before, .dg-mentoria *::after { transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* G1 Mentoria: foto do mentor no núcleo; todos os estilos permanecem escopados. */
+.dg-mentoria .dg-mentoria__art-core--portrait {
+  width: 232px;
+  height: 232px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border: 2px solid #e7b86c;
+  box-shadow: 0 0 0 7px rgba(231, 184, 108, .065), 0 0 48px rgba(231, 184, 108, .20);
+}
+.dg-mentoria .dg-mentoria__portrait {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 31%;
+  background: #0a0e12;
+}
+@media (max-width: 900px) {
+  .dg-mentoria .dg-mentoria__art-core--portrait {
+    width: 182px;
+    height: 182px;
+  }
+}
+@media (max-width: 620px) {
+  .dg-mentoria .dg-mentoria__art-core--portrait {
+    width: 160px;
+    height: 160px;
+  }
+}

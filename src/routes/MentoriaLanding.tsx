@@ -131,9 +131,16 @@ export default function MentoriaLanding() {
         <div className="dg-mentoria__hero-art" aria-label="Três prioridades da mentoria: estratégia, segurança e resultado">
           <div className="dg-mentoria__orbit dg-mentoria__orbit--one" aria-hidden="true" />
           <div className="dg-mentoria__orbit dg-mentoria__orbit--two" aria-hidden="true" />
-          <div className="dg-mentoria__art-core">
-            <span className="dg-mentoria__art-monogram">DG</span>
-            <span>INTELIGÊNCIA APLICADA</span>
+          <div className="dg-mentoria__art-core dg-mentoria__art-core--portrait">
+            <img
+              className="dg-mentoria__portrait"
+              src="/assets/mentoria/daniel-graebin-retrato.jpg"
+              alt="Daniel Graebin, mentor de inteligência artificial para negócios"
+              width={600}
+              height={600}
+              decoding="async"
+              fetchPriority="high"
+            />
           </div>
           <span className="dg-mentoria__art-label dg-mentoria__art-label--one">Estratégia</span>
           <span className="dg-mentoria__art-label dg-mentoria__art-label--two">Segurança</span>

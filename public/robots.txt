@@ -5,4 +5,7 @@ Disallow: /access
 Disallow: /admin
 Disallow: /auth/
 Disallow: /invite/
-Sitemap: https://plataforma-efata-777-frontend-production.up.railway.app/sitemap.xml
+Disallow: /activate
+Disallow: /mentoria/area
+Disallow: /api/
+Sitemap: https://mentoria-frontend-production.up.railway.app/sitemap.xml
